@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+.title{
+    color: grey;
+}
+.imgCard{
+    clear: both;
+}
+.card{
+    width: 15%;
+    float: left;
+    display: block;
+}
+.card img{
+    width: 100%;
+}
+
+
+header{
+    background: rgba(0,0,0,0.7);
+    color: white;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+nav{
+    float: right;
+}
+nav .nav_menu > li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    height: 50px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+nav .nav_menu li a{
+    color: white;
+    text-decoration: none;
+}
+nav .nav_menu > li:nth-child(3):hover .class_menu{
+    display: block;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 200px;
+    display: block;
+}
+.class_menu{
+    display: none;
+    position: absolute;
+    top:34px;
+    left: 0;
+    background: black;
+}
+nav .nav_menu{
+    margin: 0;
+}
+.class_menu li a{
+    text-decoration: none;
+}
+
+.class_heroes{
+    clear: both;
+}
+
+.top_baner{
+    background: url("../img/8564586.jpg") center top no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.top_baner .title{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 350px;
+}

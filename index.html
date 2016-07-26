@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+</head>
+<body ng-app="hearthStone">
+
+    <div ui-view="content"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/CardsController.js"></script>
+    <script src="js/services/GetAllCards.js"></script>
+    <script src="js/services/GetClassesCards.js"></script>
+</body>
+</html>

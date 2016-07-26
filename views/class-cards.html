@@ -1,0 +1,16 @@
+<div ng-controller="CardsOfClassController">
+    <div class="content">
+        <h1 class="title">{{ title }}</h1>
+        <ul>
+            <li class="card" ng-repeat="card in cards">
+                <div ng-if="'Minion' === card.type || 'Spell' === card.type">
+                    <div class="imgCard">
+                        <a ui-sref="app.class.card({idCard: card.cardId })">
+                            <img ng-src="{{ card.img }}">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

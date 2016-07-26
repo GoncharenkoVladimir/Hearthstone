@@ -1,0 +1,18 @@
+<div ng-controller="AllCardsController">
+    <div class="content">
+        <div class="title">{{ title }}</div>
+        <ul class="all_cards">
+            <li class="class_heroes" ng-repeat="(key,class) in cards">
+                <h3>{{ key }}</h3>
+                <ul>
+                    <li class="card" ng-repeat="card in class">
+                        <div class="imgCard">
+                            <img ng-src="{{ card.img }}">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
