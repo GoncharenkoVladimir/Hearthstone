@@ -1,0 +1,48 @@
+<div ng-controller="SearchCardsController">
+    <div class="content">
+        <h3 class="title">{{ title }}</h3>
+        <div class="form">
+            <form>
+                <select ng-model="class">
+                    <option>Class of card</option>
+                    <option ng-repeat="class in info.classes" value="{{ class }}">{{ class }}</option>
+                </select>
+                <select ng-model="qualities">
+                    <option>Quality of card</option>
+                    <option ng-repeat="quality in info.qualities" value="{{ quality }}">{{ quality }}</option>
+                </select>
+                <select ng-model="races">
+                    <option>Race of card</option>
+                    <option ng-repeat="race in info.races" value="{{ race }}">{{ race }}</option>
+                </select>
+                <select ng-model="sets">
+                    <option>Sets of card</option>
+                    <option ng-repeat="set in info.wild" value="{{ set }}">{{ set }}</option>
+                </select>
+                <select ng-model="types">
+                    <option>Type of card</option>
+                    <option ng-repeat="type in info.types" value="{{ type }}">{{ type }}</option>
+                </select>
+            </form>
+        </div>
+        <div class="all_cards">
+            <ul class="all_cards">
+                <li class="class_heroes" ng-repeat="(key,class) in cards">
+                    <h3 class="title_group">{{ key }}</h3>`
+                    <ul>
+                        <li class="card" ng-repeat="card in class">
+                            <div ng-if="'Minion' === card.type || 'Spell' === card.type">
+                                <a ui-sref="app.card({idCard: card.cardId })">
+                                    <div class="imgCard">
+                                        <img ng-src="{{ card.img }}">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

@@ -18,6 +18,7 @@
                     <li class="item_menu_class"><a ui-sref="app.class({name: 'Hunter'})">Hunter</a></li>
                 </ul>
             </li>
+            <li class="item_menu"><a ui-sref="app.search">Find card</a></li>
         </ul>
     </nav>
 </header>
@@ -25,3 +26,27 @@
     <h1 class="title">{{ title }}</h1>
 </div>
 <div ui-view="inner"></div>
+<footer>
+    <a href="#" class="logo"><img src="img/Hearthstone_Logo.png"> </a>
+    <nav>
+        <ul class="nav_menu">
+            <li class="item_menu"><a ui-sref="app.home">Home</a></li>
+            <li class="item_menu"><a ui-sref="app.allCards">All Cards</a></li>
+            <li class="item_menu">
+                <a href="#">Class cards</a>
+                <ul class="class_menu">
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Druid'})">Druid</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Mage'})">Mage</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Rogue'})">Rogue</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Priest'})">Priest</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Warrior'})">Warrior</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Warlock'})">Warlock</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Shaman'})">Shaman</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Paladin'})">Paladin</a></li>
+                    <li class="item_menu_class"><a ui-sref="app.class({name: 'Hunter'})">Hunter</a></li>
+                </ul>
+            </li>
+            <li class="item_menu"><a ui-sref="app.search">Find card</a></li>
+        </ul>
+    </nav>
+</footer>

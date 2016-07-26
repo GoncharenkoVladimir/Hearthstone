@@ -22,3 +22,16 @@ app.controller('SingleCardController', function($scope, GetSingleCard, $statePar
         $scope.error = 'Error!'
     })
 });
+
+app.controller('SearchCardsController', function($scope, GetInfo, GetAllCards) {
+    GetInfo.getData().then(function(data) {
+        $scope.info = data;
+        $scope.title = 'Search cards';
+    }, function() {
+        $scope.error = 'Error!'
+    });
+    GetAllCards.getData().then(function(data){
+        console.dir(data);
+        $scope.cards = data;
+    });
+});

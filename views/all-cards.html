@@ -3,7 +3,7 @@
         <div class="title">{{ title }}</div>
         <ul class="all_cards">
             <li class="class_heroes" ng-repeat="(key,class) in cards">
-                <h3>{{ key }}</h3>
+                <h3 class="title_group">{{ key }}</h3>
                 <ul>
                     <li class="card" ng-repeat="card in class">
                         <div ng-if="'Minion' === card.type || 'Spell' === card.type">

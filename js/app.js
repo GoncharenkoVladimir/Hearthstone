@@ -31,6 +31,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('app.search', {
+            url: "/search-cards",
+            views: {
+                inner : {
+                    controller: 'SearchCardsController',
+                    templateUrl: 'views/search-cards.html'
+                }
+            }
+        })
         .state('app.class', {
             url: "/class/:name",
             views: {
@@ -58,6 +67,4 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-
-
 });
