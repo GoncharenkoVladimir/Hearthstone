@@ -6,8 +6,12 @@
                 <h3>{{ key }}</h3>
                 <ul>
                     <li class="card" ng-repeat="card in class">
-                        <div class="imgCard">
-                            <img ng-src="{{ card.img }}">
+                        <div ng-if="'Minion' === card.type || 'Spell' === card.type">
+                            <a ui-sref="app.card({idCard: card.cardId })">
+                                <div class="imgCard">
+                                    <img ng-src="{{ card.img }}">
+                                </div>
+                            </a>
                         </div>
                     </li>
                 </ul>

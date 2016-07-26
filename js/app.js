@@ -40,10 +40,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('app.class.card', {
+        .state('app.card', {
             url: "/card/:idCard",
             views: {
                 inner : {
+                    controller: 'SingleCardController',
+                    templateUrl: 'views/card.html'
+                }
+            }
+        })
+        .state('app.class.card', {
+            url: "/card/:idCard",
+            views: {
+                singleCard : {
                     controller: 'SingleCardController',
                     templateUrl: 'views/card.html'
                 }

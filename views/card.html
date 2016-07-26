@@ -1,5 +1,16 @@
 <div ng-controller="SingleCardController">
     <div class="content">
         <div class="title">{{ title }}</div>
+        <div class="imgCard">
+            <img ng-src="{{ card.img }}">
+            <img ng-src="{{ card.imgGold }}">
+        </div>
+        <ul class="parameters">
+            <li class="item">Card set: <a>{{ card.cardSet }}</a></li>
+            <li class="item">Player class: <a>{{ card.playerClass }}</a></li>
+            <li class="item">Rarity: {{ card.rarity }}</li>
+            <li class="item">Cost: {{ card.cost }}</li>
+            <li class="item">Type: {{ card.type }}</li>
+        </ul>
     </div>
 </div>

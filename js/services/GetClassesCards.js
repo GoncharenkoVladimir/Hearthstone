@@ -1,4 +1,4 @@
-app.factory('GetClassesCards', function($http, $location, $q) {
+app.factory('GetClassesCards', function($http, $q) {
     return {
         getData: function(classHeroes) {
             var deferred = $q.defer();

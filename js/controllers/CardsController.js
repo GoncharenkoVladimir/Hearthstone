@@ -15,11 +15,9 @@ app.controller('CardsOfClassController', function($scope, GetClassesCards, $stat
 });
 
 app.controller('SingleCardController', function($scope, GetSingleCard, $stateParams, $state) {
-    console.log('dsfgs');
     GetSingleCard.getData($state.params.idCard).then(function(data) {
-        console.log('dsfgs');
-        $scope.card = data;
-        $scope.title = 'Card';
+        $scope.card = data[0];
+        $scope.title = data[0].name;
     }, function() {
         $scope.error = 'Error!'
     })

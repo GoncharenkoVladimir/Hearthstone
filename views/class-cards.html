@@ -1,7 +1,7 @@
 <div ng-controller="CardsOfClassController">
-    <div class="content">
+    <div ui-view="singleCard" class="content">
         <h1 class="title">{{ title }}</h1>
-        <ul>
+        <ul class="cards">
             <li class="card" ng-repeat="card in cards">
                 <div ng-if="'Minion' === card.type || 'Spell' === card.type">
                     <div class="imgCard">

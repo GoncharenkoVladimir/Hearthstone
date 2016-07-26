@@ -1,8 +1,11 @@
 body{
+    background: black;
     margin: 0;
 }
-.title{
+.content .title{
     color: grey;
+    text-align: center;
+    font-size: 40px;
 }
 .imgCard{
     clear: both;
@@ -83,4 +86,10 @@ nav .nav_menu{
     color: white;
     font-size: 40px;
     padding-top: 350px;
+}
+.content{
+    padding-top: 60px;
+}
+.content .cards{
+    overflow: hidden;
 }
