@@ -8,7 +8,7 @@ app.controller('AllCardsController', function($scope, GetAllCards) {
 app.controller('CardsOfClassController', function($scope, GetClassesCards, $stateParams, $state) {
     GetClassesCards.getData($state.params.name).then(function(data) {
         $scope.cards = data;
-        $scope.title = 'All' + $state.params.name + '\'s cards!';
+        $scope.title = 'All ' + $state.params.name + '\'s cards!';
     }, function() {
         $scope.error = 'Error!'
     })
